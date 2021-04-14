@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <semaphore.h>
+
+#define SHM_SEGMENT_SIZE	65536
+#define SHM_SEGMENT_NAME	"/demo-shm"
+#define SEMA_NAME 		"/demo_sem"
+
+static sem_t *demo_sem;
+
+static void *get_shared_memory(void){
+
+  int sm_fd;
+  struct shared_data *shm_p;
+  shm_fd = shm_open(SHM_SEGMENT_NAME, O_CREAT | O_EXCL | O_RDWR, 0666);
+
+  if()}
+{
+
+}
