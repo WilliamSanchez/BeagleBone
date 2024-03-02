@@ -1,0 +1,49 @@
+
+
+
+1-> TOOLCHAIN
+
+git clone https://github.com/crosstool-ng/crosstool-ng
+
+find ~/x-tools -name 
+
+
+2-> BOOTLOADERR
+
+
+git clone https://gitlab.denx.de/u-boot/u-boot
+
+cd .profile
+export PATH="$HOME/x-tools/<nome-toolchain>/bin:$PATH"
+
+
+2.1 -> NFS
+
+
+2.2 -> SD-Card
+
+ 
+3-> KERNEL
+
+custom device tree
+
+git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux
+
+
+4-> BUSYBOX
+
+git clone https://git.busybox.net/busybox 
+
+
+
+
+
+5-> BUILDROOT
+
+git clone https://git.buildroot.net/buildroot
+
+
+
+
+
+6-> YOCTO
